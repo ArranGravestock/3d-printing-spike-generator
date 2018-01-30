@@ -3,6 +3,9 @@ An algorithm which allows you to take a polygonal mesh and add a new surface giv
 
 ## Basic usage
 ```c++
-OSG::NodeRefPtr ** geo ** = OSG::makeTeapot(2.0f, 1.0f); //create basic geometry
-auto spikes = drawSpikes(* * distance, depth * *, ** geo **);
+OSG::NodeRefPtr geo = OSG::makeTeapot(2.0f, 1.0f); //create basic geometry
+auto spikes = drawSpikes(distance, depth, geo);
+
+scene->addChild(file);
+scene->addChild(spikes);
 ```
